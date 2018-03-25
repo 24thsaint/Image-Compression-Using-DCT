@@ -7,7 +7,9 @@
   <div style="float:left">
     <button id="original">Original</button>
     <button id="compress">Compress</button>
-
+  </br>
+    Quality: <input type="input" id="quality" value="10"/> %
+</br>
     <p id="progress">Loading...</p>
   </div>
 
@@ -51,6 +53,7 @@
       var section = [];
       var width = debug ? 8 : canvas.width;
       var height = debug ? 8 : canvas.height;
+      quality =  document.getElementById('quality').value;
 
       for (let xOut = 0; xOut < width; xOut += 8) {
         for (let yOut = 0; yOut < height; yOut += 8) {
