@@ -7,16 +7,16 @@
   <div style="float:left">
     <button id="original">Original</button>
     <button id="compress">Compress</button>
-  </br>
+    </br>
     Quality: <input type="input" id="quality" value="10"/> %
-</br>
+    </br>
     <p id="progress">Loading...</p>
   </div>
 
   <script>
     var img = new Image();
     img.crossOrigin = "Anonymous";
-    img.src = 'sample.jpg';
+    img.src = 'clouds.jpg';
 
     var canvas = document.getElementById('canvas');
     var ctx = canvas.getContext('2d');
@@ -28,7 +28,8 @@
       progress.innerHTML = "Ready.";
     }
 
-    // Recommended quantization table for JPEG: https://web.stanford.edu/class/ee398a/handouts/lectures/08-JPEG.pdf
+    // Recommended quantization table for JPEG:
+    // https://web.stanford.edu/class/ee398a/handouts/lectures/08-JPEG.pdf
     const standardQuantization =
       [
         [16, 11, 10, 16, 24, 40, 51, 61],
