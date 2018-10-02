@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: gainsboro;
+      }
+      .container {
+        margin: 5%;
+      }
+      canvas {
+        margin-right: 5%;
+      }
+      .actions {
+        margin-bottom: 5%;
+      }
+    </style>
+  </head>
+<body>
+  
+  <div class="container">
+    <canvas id="canvas" width="640" height="480" style="float:left"></canvas>
+    <div style="float:left">
+      <div class="actions">
+        <button id="original">Load Original</button>
+        <button id="compress">Start Compression</button>
+      </div>
+      
+      <div>
+        Quality: <input type="input" id="quality" value="10"/> %
+      </div>
+
+      <p id="progress">Loading...</p>
+    </div>
+  </div>
+
+  <script src="compression.js"></script>
+</body>
+
+</html>
