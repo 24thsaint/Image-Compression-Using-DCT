@@ -1,26 +1,15 @@
 # IMAGE COMPRESSION PROJECT USING DISCRETE COSINE TRANSFORM
 
-This project uses [Feathers](http://feathersjs.com). An open source web framework for building modern real-time applications.
-
-## Explanation
+## The process in the code is fully described in:
 https://en.wikipedia.org/wiki/JPEG#Discrete_cosine_transform
 
-See /public/index.html to see the actual source code.
+## How to run
 
-## Getting Started
+It is recommended to use a web server (Apache2) to host the files locally
+and access them.
 
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install the dependencies
-
-    ```
-    cd path/to/project; npm install
-    ```
-
-3. Start the app
-
-    ```
-    npm start
-    ```
+Failure to do so will result in the following browser error: 
+> Access to Image at 'file:///var/www/html/image-compression/sample.jpg' from origin 'null' has been blocked by CORS policy: Invalid response. Origin 'null' is therefore not allowed access.
 
 ## Live demo
 
